@@ -20,6 +20,10 @@ public class LitebansVCPlugin implements VoicechatPlugin {
 		mutedPlayers.remove(uuid);
 	}
 
+	public static boolean isMuted(UUID uuid) {
+		return mutedPlayers.contains(uuid);
+	}
+
 	@Override
 	public String getPluginId() {
 		return "litebans-integration";
