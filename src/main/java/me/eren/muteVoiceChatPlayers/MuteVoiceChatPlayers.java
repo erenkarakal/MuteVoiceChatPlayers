@@ -21,6 +21,8 @@ public final class MuteVoiceChatPlayers extends JavaPlugin {
 		if (service != null) {
 			service.registerPlugin(new LitebansVCPlugin());
 		}
+
+		MuteSyncTask.startSyncTask();
 	}
 
 }
